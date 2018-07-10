@@ -1,0 +1,27 @@
+name: Contact Page Messages
+description: Messages submitted via the contact page
+slug: messages
+label_field_name: name
+public_submission_enabled: true
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+- email:
+    label: Email
+    type: string
+    required: true
+- phone:
+    label: Phone
+    type: string
+    required: false
+- body:
+    label: Body
+    type: text
+    required: true
+- newsletter:
+    label: Newsletter
+    type: boolean
+    required: false
+

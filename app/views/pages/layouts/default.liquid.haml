@@ -1,0 +1,32 @@
+---
+title: Default layout
+is_layout: false
+---
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
+    %title {{ site.name }}
+
+    %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Lato:300,400,700,900", :rel => "stylesheet"}/
+    {{ 'bootstrap.css' | stylesheet_tag }}
+    {{ 'application.css' | stylesheet_tag }}
+
+  %body
+    {% include 'nav' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'footer' %}
+
+    {{ 'jquery.min.js' | javascript_tag }}
+    {{ 'popper.min.js' | javascript_tag }}
+    {{ 'bootstrap.min.js' | javascript_tag }}
+    {{ 'holder.min.js' | javascript_tag }}
+    {{ 'application.js' | javascript_tag }}

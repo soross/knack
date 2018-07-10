@@ -1,0 +1,58 @@
+%footer.footer.bg-dark.text-white.py-5
+  .container
+    / %p.mb-0 © Potluck Cafe Society {{ now | localized_date: '%Y' }}
+    .row
+      .col-sm-8
+        .media
+          %img.mr-2{src:" {{ 'knack-logo-bw-transparent.png' | theme_image_url }} ", style: "width: 84px;"}
+          .media-body.align-self-center
+            %nav.nav.mb-2
+              %a{:href => "{% path_to home %}", class: "{% if page.handle == 'home' %}active{% endif %} nav-link"} Home
+
+              {% for page_in_nav in site.pages %}
+              {% if page_in_nav.listed? %}
+              {% if page_in_nav.depth == 1 %}
+
+
+              %a{href: "{% path_to page_in_nav %}", class: "{% if page.fullpath == page_in_nav.fullpath %}active{% endif %} nav-link"} {{ page_in_nav.title }}
+   
+
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+
+            %p.text-white.mb-0.ml-3.text-muted 
+              An initiative of the 
+              %a.text-white{href: "https://www.potluckcatering.org"} Potluck Cafe Society 
+              {{ now | localized_date: '%Y' }}
+            
+
+      / .col-sm-2
+      /   %h5.text-white.font-weight-bold.mb-4 Navigation
+      /   %ul
+      /     %li
+      /       %a{href:"#"} Home
+      /     %li
+      /       %a{href:"#"} Soft Skills
+      /     %li
+      /       %a{href:"#"} Kitchen Skills
+      /     %li
+      /       %a{href:"#"} What Are Micro-Crenditals
+      /     %li
+      /       %a{href:"#"} Contact
+      / .col-sm-2
+      /   %h5.text-white.font-weight-bold.mb-4 Navigation
+      /   %ul
+      /     %li
+      /       %a{href:"#"} Home
+      /     %li
+      /       %a{href:"#"} Soft Skills
+      /     %li
+      /       %a{href:"#"} Kitchen Skills
+      /     %li
+      /       %a{href:"#"} What Are Micro-Crenditals
+      /     %li
+      /       %a{href:"#"} Contact
+
+
+

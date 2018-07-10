@@ -1,0 +1,16 @@
+local:
+  host: localhost:3000
+  handle: indigo-lake-627
+  email: joseph@josephmasongsong.com
+  api_key: 17c45322f96945320c3a8d08e446ab7adc0c2381
+# staging:
+#   host: staging.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# production:
+#   host: www.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+#   # ssl: true

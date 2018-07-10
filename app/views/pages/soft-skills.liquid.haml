@@ -1,0 +1,106 @@
+---
+title: Soft Skills
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 2
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+{% extends 'layouts/simple' %}
+
+{% block content/header %}
+
+.bg-primary.py-5.page-header{style: "background: url({{ 'knack-badges.jpg' | theme_image_url }}) center center; background-size: cover;"}
+  .page-header-caption
+    %h1.text-white Soft Skills
+    %span.line-title.bg-primary.mb-3
+    %p.mb-0.lead.text-white Emerging move the needle blended value silo. And innovation black lives matter; justice disrupt; social entrepreneur social capital uplift vibrant. 
+
+{% endblock %}
+
+{% block content/main %}
+
+.row
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'workplace-communication-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Workplace Communication
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %a.btn.btn-primary{href: "/credential"} Learn More
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'teamwork-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Teamwork
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %a.btn.btn-primary{href: "/credential"} Learn More
+
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'conflict-resolution-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Conflict Resolution
+      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
+      %a.btn.btn-primary{href: "/credential"} Learn More
+
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'time-management-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Time Management
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %a.btn.btn-primary{href: "/credential"} Learn More
+
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'resource-navigation-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Resource Navigation
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %a.btn.btn-primary{href: "/credential"} Learn More
+
+  .col-lg-4
+    .badge-description.mb-5.text-center
+      %img.img-responsive.mb-3{src: "{{ 'professionalism-badge.jpg' | theme_image_url }}"}
+      %h4.text-secondary.mb-3 Professionalism
+      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
+      %a.btn.btn-primary{href: "/credential"} Learn More
+
+  / .col-lg-4
+  /   .badge-description.mb-5.text-center
+  /     %img.img-responsive.mb-3{src: "{{ 'personal-finance-badge.jpg' | theme_image_url }}"}
+  /     %h4.text-secondary.mb-3 Personal Finance
+  /     %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+  /     %a.btn.btn-primary{href: "/credential"} Learn More
+
+{% endblock %}
+
+{% block content/callout %}
+.bg-primary.py-5.text-center
+  %h2.mb-3.text-white Download All Soft Skills Micro-Credentials
+  %p.text-white 
+    The Knack modules are licensed under a Creative Commons 
+    %br
+    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
+  %a.btn.btn-lg.btn-outline-light{href: "#"} Download Zip File!
+{% endblock %}

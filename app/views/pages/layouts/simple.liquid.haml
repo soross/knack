@@ -1,0 +1,24 @@
+---
+title: Simple
+is_layout: true
+---
+{% extends 'layouts/default' %}
+
+{% block content %}
+
+{% block header, short_name: true, priority: 1 %}
+
+
+{% endblock %}
+
+%main{:role => "main"}
+  .container
+    {% block main, short_name: true %}
+
+    {% endblock %}
+
+{% block callout, short_name: true %}
+  
+{% endblock %}
+
+{% endblock %}
