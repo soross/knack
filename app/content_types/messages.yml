@@ -1,4 +1,4 @@
-name: Contact Page Messages
+name: Messages
 description: Messages submitted via the contact page
 slug: messages
 label_field_name: name

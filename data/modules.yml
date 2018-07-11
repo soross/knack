@@ -1,0 +1,119 @@
+- "Dish Machine Operator":
+    description: "Omnis molestiae illo quia exercitationem et. Aliquid non earum. Rem optio quia est eius."
+    criteria: "Ullam tenetur omnis sequi. Eos dicta mollitia doloribus sit architecto cumque non. Non error dolorem necessitatibus deleniti omnis. Adipisci vitae animi dicta et. Libero consequatur quisquam reiciendis."
+    evidence: "Omnis natus doloribus distinctio recusandae. Ipsam illo architecto iusto dolorum quae sit temporibus. Sit voluptatem ipsa eveniet quia libero incidunt voluptates."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: "Kitchen Skills"
+
+- "Knife Skills":
+    description: "Dolorem est provident sit non. Ut iusto architecto. Labore vel consectetur ratione quas totam ea harum."
+    criteria: "Ad animi dolorem. Qui molestias ut id molestiae in ex. Fuga aut ut sapiente. Voluptates esse ab. Possimus necessitatibus eos laboriosam qui ducimus sapiente."
+    evidence: "Doloremque accusamus et corporis quos assumenda autem eum. Voluptates est sequi quaerat. Ratione et quam eos dolore. Laboriosam qui totam voluptatibus dolores sit numquam dolor."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Kitchen Skills
+
+
+- "Safety in a Kitchen":
+    description: "Eos eaque delectus quis veniam architecto veritatis. Velit accusamus laudantium blanditiis. Aut natus sed dolor dolores."
+    criteria: "Quia consequatur debitis sequi tempore accusantium ducimus. Illum corporis et autem. Voluptas cum possimus nihil velit ut et."
+    evidence: "Quia qui eos. Voluptatem sed expedita repellendus ab. Nostrum deserunt fuga est nam delectus et omnis. Quia non numquam animi est."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Kitchen Skills
+
+
+- "Sanitation":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Kitchen Skills
+
+- "Storage & Receiving":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Kitchen Skills
+
+
+- "Tools & Equipment":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Kitchen Skills
+
+
+- "Workplace Communication":
+    description: "Omnis molestiae illo quia exercitationem et. Aliquid non earum. Rem optio quia est eius."
+    criteria: "Ullam tenetur omnis sequi. Eos dicta mollitia doloribus sit architecto cumque non. Non error dolorem necessitatibus deleniti omnis. Adipisci vitae animi dicta et. Libero consequatur quisquam reiciendis."
+    evidence: "Omnis natus doloribus distinctio recusandae. Ipsam illo architecto iusto dolorum quae sit temporibus. Sit voluptatem ipsa eveniet quia libero incidunt voluptates."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+
+- "Teamwork":
+    description: "Dolorem est provident sit non. Ut iusto architecto. Labore vel consectetur ratione quas totam ea harum."
+    criteria: "Ad animi dolorem. Qui molestias ut id molestiae in ex. Fuga aut ut sapiente. Voluptates esse ab. Possimus necessitatibus eos laboriosam qui ducimus sapiente."
+    evidence: "Doloremque accusamus et corporis quos assumenda autem eum. Voluptates est sequi quaerat. Ratione et quam eos dolore. Laboriosam qui totam voluptatibus dolores sit numquam dolor."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+
+- "Conflict Resolution":
+    description: "Eos eaque delectus quis veniam architecto veritatis. Velit accusamus laudantium blanditiis. Aut natus sed dolor dolores."
+    criteria: "Quia consequatur debitis sequi tempore accusantium ducimus. Illum corporis et autem. Voluptas cum possimus nihil velit ut et."
+    evidence: "Quia qui eos. Voluptatem sed expedita repellendus ab. Nostrum deserunt fuga est nam delectus et omnis. Quia non numquam animi est."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+
+- "Personal Finances":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+- "Resource Navigation":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+- "Time Management":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+- "Professionalism":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+
+- "Computer Literacy":
+    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
+    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
+    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
+    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    category: Soft Skills
+

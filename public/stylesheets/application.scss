@@ -42,6 +42,19 @@ span.line-title {
     // margin-bottom: 20px;
 }
 
+.micro-credential-content {
+  font-size: 1.25rem;
+  font-weight: 300;
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.micro-credential-description {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .page-header {
   position: relative;
   min-height: 32rem;

@@ -1,0 +1,44 @@
+---
+title: Category Template
+listed: false
+published: true
+content_type: "categories"
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+
+{% extends 'layouts/basic' %}
+
+{% block content/header %}
+.bg-primary.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+  .page-header-caption
+    %h1.text-white {{ category.name }}
+    %span.line-title.bg-primary.mb-3
+    %p.mb-0.lead.text-white {{ category.brief }}
+{% endblock %}
+
+{% block content/main %}
+.container
+  .row
+    {% for module in category.modules %}
+    .col-lg-6
+      .badge-description.mb-5.media
+        %img.img-responsive.mb-0.mr-3{src: "{{ module.badge.url }}"}
+        .media-body
+          %h4.text-secondary.mb-2 {{ module.name }}
+          %p.mb-2 {{ module.description | strip_html | truncate: 120 }}
+          %a.text-secondary.text-underline{href: "{% path_to module %}"} Read More
+    {% endfor %}
+
+{% endblock %}
+
+{% block content/callout %}
+.bg-primary.py-5.text-center
+  %h2.mb-3.text-white Download All {{ page.title }} Micro-Credentials
+  %p.text-white 
+    The Knack modules are licensed under a Creative Commons 
+    %br
+    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
+  %a.btn.btn-lg.btn-outline-light{href: "#"} Download Zip File!
+{% endblock %}

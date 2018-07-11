@@ -1,0 +1,46 @@
+---
+title: Module Template
+listed: false
+published: true
+content_type: "modules"
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends layouts/basic %}
+
+{% block content/header %}
+.bg-info.py-5.credential-header
+  .credential-header-caption
+    %h1.text-dark {{ page.title }}
+    %span.line-title.bg-dark.mb-3
+    %p.mb-0.lead.text-dark Micro-Credential
+{% endblock %}
+
+{% block content/main %}
+
+.container.micro-credential-content
+  %h3.text-secondary Description
+  %span.line-title.bg-secondary.mb-3
+  {{ module.description }}
+
+  %h3.text-secondary.mt-5 Criteria
+  %span.line-title.bg-secondary.mb-3
+  {{ module.criteria }}
+  
+
+  %h3.text-secondary.mt-5 Evidence
+  %span.line-title.bg-secondary.mb-3
+  {{ module.evidencegg }}
+
+{% endblock %}
+
+{% block content/callout %}
+.bg-primary.py-5.text-center
+  %h2.mb-3.text-white Download The {{ page.title }} Micro-Credential
+  %p.text-white 
+    The Knack modules are licensed under a Creative Commons 
+    %br
+    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
+  %a.btn.btn-lg.btn-outline-light{href: "#"} Download Zip File!
+{% endblock %}

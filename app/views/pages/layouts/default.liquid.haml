@@ -9,22 +9,20 @@ is_layout: false
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
-
     %title {{ site.name }}
-    %link{:href => "{{ 'icon-knack-32x32.png' | theme_image_url }}", :rel => "shortcut icon"}/
-
+    %link{:href => "{{ 'icon-knack-32x32.png' | theme_image_url }}", :rel => "icon", :type => "image/png"}/
     %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
     %link{:href => "https://fonts.googleapis.com/css?family=Lato:300,400,700,900", :rel => "stylesheet"}/
     {{ 'bootstrap.css' | stylesheet_tag }}
     {{ 'application.css' | stylesheet_tag }}
-
   %body
-    {% include 'nav' %}
+    #wrapper
+      {% include 'nav' %}
 
-    {% block content %}
-    {% endblock %}
+      {% block content %}
+      {% endblock %}
 
-    {% include 'footer' %}
+      {% include 'footer' %}
 
     {{ 'jquery.min.js' | javascript_tag }}
     {{ 'popper.min.js' | javascript_tag }}

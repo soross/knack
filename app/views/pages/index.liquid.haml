@@ -3,120 +3,102 @@ title: Home page
 published: true
 handle: home
 ---
-{% extends 'layouts/simple' %}
+{% extends 'layouts/basic' %}
+
 
 
 {% block content/header %}
-
-#myCarousel.carousel.slide{"data-ride" => "carousel"}
-  / %ol.carousel-indicators
-  /   %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-  /   %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-  /   %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-  .carousel-inner
-    .carousel-item.active{style: "background: url({{ 'potluck-cafe-society.jpg' | theme_image_url }}) center center; background-size: cover;"}
-      / %img.first-slide{:alt => "First slide", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="}/
-
-      .carousel-caption.text-left.py-0
-        %h1 Putting skills to work for impact driven companies
-        %p.lead Deep dive expose the truth, boots on the ground NGO circular incubator equal opportunity technology.
-        %p.mb-0
-          %a.btn.btn-lg.btn-primary{:href => "/what-are-micro-credentials", :role => "button"} Learn More
-    / .carousel-item
-    /   %img.second-slide{:alt => "Second slide", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="}/
-    /   .container
-    /     .carousel-caption
-    /       %h1 Another example headline.
-    /       %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-    /       %p
-    /         %a.btn.btn-lg.btn-primary{:href => "#", :role => "button"} Learn more
-    / .carousel-item
-    /   %img.third-slide{:alt => "Third slide", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="}/
-    /   .container
-    /     .carousel-caption.text-right
-    /       %h1 One more for good measure.
-    /       %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-    /       %p
-    /         %a.btn.btn-lg.btn-primary{:href => "#", :role => "button"} Browse gallery
-  / %a.carousel-control-prev{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
-  /   %span.carousel-control-prev-icon{"aria-hidden" => "true"}
-  /   %span.sr-only Previous
-  / %a.carousel-control-next{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
-  /   %span.carousel-control-next-icon{"aria-hidden" => "true"}
-  /   %span.sr-only Next
-
+.bg-primary.py-5.page-header{style: "background: url({% capture image_url %}{% editable_file 'header_image' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+  .page-header-caption.text-white
+    %h1
+      {% editable_text "index_header", format: raw, rows: 2 %}
+      Putting skills to work for impact driven companies
+      {% endeditable_text %}
+    %p.lead 
+      {% editable_text "index_subheader", format: raw, rows: 2 %}
+      Deep dive expose the truth, boots on the ground NGO circular incubator equal opportunity technology.
+      {% endeditable_text %}
+    %p.mb-0
+      %a.btn.btn-lg.btn-primary{:href => "/what-are-micro-credentials", :role => "button"} Learn More
 {% endblock %}
 
+
+
+
 {% block content/main %}
+.container
+  .row
+    .col-md-7
+      %h1.mb-2.featurette-heading
+        {% editable_text "row_header", format: raw, rows: 2 %}
+        What is Knack?
+        {% endeditable_text %}
+      %span.line-title.mb-4.bg-info
+      %p.lead.mb-4 
+        {% editable_text "row_content", format: raw, rows: 5 %}
+        An initiative of the Potluck Cafe Society, Knack is a supportive training program for individuals with barriers to traditional employment.  Knack uses micro-credentials, or short training modules where industry level certifications are broken down into individual skills.
+        {% endeditable_text %}
+      %a.btn.btn-outline-secondary.btn-lg{href: "/what-are-micro-credentials"} What are Micro-Credentials?
 
-.row.featurette
-  .col-md-7
-    %h1.mb-2.featurette-heading
-      What is Knack?
-      / %span.text-muted It'll blow your mind.
-    %span.line-title.mb-4.bg-info
-    %p.lead.mb-4 An initiative of the Potluck Cafe Society, Knack is a supportive training program for individuals with barriers to traditional employment.  Knack uses micro-credentials, or short training modules where industry level certifications are broken down into individual skills.
-    %a.btn.btn-outline-secondary.btn-lg{href: "/what-are-micro-credentials"} What are Micro-Credentials?
+    .col-md-5
+      .featurette-image.mx-auto.bg-info{style: "background: url({% capture image_url %}{% editable_file 'feature_image_1' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 
-  .col-md-5
-    / %img.featurette-image.img-fluid.mx-auto{:alt => "Generic placeholder image", "data-src" => "holder.js/500x500/auto"}/
+  %hr.featurette-divider/
+  .row
+    .col-md-7.order-md-2
+      %h1.mb-2.featurette-heading
+        {% editable_text "row_header_middle", format: raw, rows: 2 %}
+        Put Knack to Work In Your Organization
+        {% endeditable_text %}
+      %span.line-title.mb-4.bg-primary
+      %p.lead.mb-4 
+        {% editable_text "row_content_middle", format: raw, rows: 5 %}
+        This website houses training materials developed during the first 2.5 years of the Knack project. These materials are available under a Creative Commons license for community use.  All we ask is that you credit us for the content you use, and do not try to make money with these modules.
+        {% endeditable_text %}
 
-    .featurette-image.mx-auto{style: "background: url({{ 'knack-ballroom.jpg' | theme_image_url }}) center center; background-size: cover;"}
+      %a.btn.btn-outline-primary.btn-lg.mr-2{href: "/categories/soft-skills"} See The Soft Skills
+      %a.btn.btn-outline-secondary.btn-lg{href: "/categories/kitchen-skills"} See The Kitchen Skills
+    .col-md-5.order-md-1
+      .featurette-image.mx-auto.bg-primary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_2' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 
-%hr.featurette-divider/
-.row.featurette
-  .col-md-7.order-md-2
-    %h1.mb-2.featurette-heading
-      Put Knack to Work In Your Organization
-      / %span.text-muted See for yourself.
-    %span.line-title.mb-4.bg-primary
-
-    %p.lead.mb-4 This website houses training materials developed during the first 2.5 years of the Knack project. These materials are available under a Creative Commons license for community use.  All we ask is that you credit us for the content you use, and do not try to make money with these modules.
-    %a.btn.btn-outline-primary.btn-lg.mr-2{href: "/soft-skills"} See The Soft Skills
-    %a.btn.btn-outline-secondary.btn-lg{href: "/kitchen-skills"} See The Kitchen Skills
-
-
-  .col-md-5.order-md-1
-    .featurette-image.mx-auto{style: "background: url({{ 'workshop.jpg' | theme_image_url }}) center center; background-size: cover;"}
-
-%hr.featurette-divider/
-.row.featurette
-  .col-md-7
-    %h1.mb-2.featurette-heading
-      What is Next For Knack?
-      / %span.text-muted Checkmate.
-    %span.line-title.mb-4.bg-secondary
-
-    %p.lead.mb-4 Potluck is taking the rest of 2018 to reconsider the direction of the Knack training program.  Stay tuned for an update in 2019. Read our 2018 report on learnings, as the Potluck team endeavoured to develop content, deliver training, and match employers and Knack “earners” with employment.
-    %a.btn.btn-outline-secondary.btn-lg.mr-2{href: "#"} Read The Report
-    %a.btn.btn-outline-primary.btn-lg{href: "#"} Sign Up For The Newsletter
-
-  .col-md-5
-    .featurette-image.mx-auto{style: "background: url({{ 'banner-congrats.jpg' | theme_image_url }}) center center; background-size: cover;"}
-
+  %hr.featurette-divider/
+  .row
+    .col-md-7
+      %h1.mb-2.featurette-heading
+        {% editable_text "row_header_last", format: raw, rows: 2 %}
+        What is Next For Knack?
+        {% endeditable_text %}
+      %span.line-title.mb-4.bg-secondary
+      %p.lead.mb-4 
+        {% editable_text "row_content_last", format: raw, rows: 5 %}
+        Potluck is taking the rest of 2018 to reconsider the direction of the Knack training program.  Stay tuned for an update in 2019. Read our 2018 report on learnings, as the Potluck team endeavoured to develop content, deliver training, and match employers and Knack “earners” with employment.
+        {% endeditable_text %}
+      %a.btn.btn-outline-secondary.btn-lg.mr-2{href: "#"} Read The Report
+      %a.btn.btn-outline-primary.btn-lg{href: "https://www.potluckcatering.org/newsletter"} Sign Up For The Newsletter
+    .col-md-5
+      .featurette-image.mx-auto.bg-secondary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_3' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 {% endblock %}
 
 {% block content/callout %}
-
 .bg-primary.py-5.text-center
-  %h2.mb-3.text-white Take Me To The Training Modules
+  %h2.mb-3.text-white {% editable_text "header", format: raw, rows: 2 %}Take Me To The Training Modules{% endeditable_text %}
   %p.text-white 
+    {% editable_text "subheader", format: raw, rows: 2 %}
     The Knack modules are licensed under a Creative Commons 
     %br
     Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-  %a.btn.btn-lg.btn-outline-light.mr-2{href: "/soft-skills"} See The Soft Skills
-  %a.btn.btn-lg.btn-outline-light{href: "/kitchen-skills"} See The Kitchen Skills
+    {% endeditable_text %}
+  {% for category in contents.categories %}
+  %a.btn.btn-lg.btn-outline-light.mr-2{href: "{% path_to category %}"} See The {{ category.name }}
+  {% endfor %}
 
 .bg-white.py-5
   .container
     %p.text-center.font-weight-normal.mb-5 Proudly Supported By
-    / %span.line-title.mb-4.bg-primary.mb-5.mx-auto
     .row
       .col-sm-6.text-right.pr-5
         %img.img-fluid{src:" {{ 'vancouverfoundation.png' | theme_image_url }} ", style: "width: 300px;"}
       .col-sm-6.pl-5
         %img.img-fluid{src:" {{ 'ledlab.png' | theme_image_url }} ", style: "width: 300px;"}
-
-
 {% endblock %}
 

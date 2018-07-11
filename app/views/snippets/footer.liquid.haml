@@ -6,26 +6,19 @@
         %nav.nav.mb-2
           %a{:href => "{% path_to home %}", class: "{% if page.handle == 'home' %}active{% endif %} nav-link"} Home
 
-          {% for content_entry in contents.credential_categories %}
-          %a{href: "{% path_to content_entry %}", class: "{% if page.slug == content_entry.slug %}active{% endif %} nav-link"} {{ content_entry.name }}
+          {% for category in contents.categories %}
+          %a{href: "{% path_to category %}", class: "{% if page.title == category.name %}active{% endif %} nav-link"} {{ category.name }}
           {% endfor %}
-
 
           {% for page_in_nav in site.pages %}
           {% if page_in_nav.listed? %}
           {% if page_in_nav.depth == 1 %}
-
-
           %a{href: "{% path_to page_in_nav %}", class: "{% if page.fullpath == page_in_nav.fullpath %}active{% endif %} nav-link"} {{ page_in_nav.title }}
-
-
           {% endif %}
           {% endif %}
           {% endfor %}
 
         %p.text-white.mb-0.ml-3.text-muted 
-          / The Knack modules are licensed under a Creative Commons Attribution-Non-Commercial-No Derivatives 4.0 International License.
-          / %br         
           An initiative of the 
           %a.text-white{href: "https://www.potluckcatering.org"} Potluck Cafe Society 
           {{ now | localized_date: '%Y' }}. 

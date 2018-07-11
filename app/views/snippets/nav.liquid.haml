@@ -2,19 +2,13 @@
   .container
     %button.navbar-toggler{"aria-controls" => "navbarMain", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarMain", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
-
     %a.navbar-brand{href: "{% path_to home %}"} {{ 'knack-logo-converted.png' | theme_image_tag }}
     #navbarMain.navbar-collapse.collapse
       %ul.navbar-nav.ml-auto
-        / %li.nav-item
-        /   %a{href: "{% path_to home %}", class: "{% if page.handle == 'home' %}active{% endif %} nav-link text-dark px-3 py-4"} Home
-        {% for content_entry in contents.credential_categories %}
+        {% for category in contents.categories %}
         %li.nav-item
-
-          %a{href: "{% path_to content_entry %}", class: "{% if page.slug == page.content_type %}active{% endif %} nav-link text-dark px-3 py-4"} {{ content_entry.name }}
-
+          %a{href: "{% path_to category %}", class: "{% if page.title == category.name %}active{% endif %} nav-link text-dark px-3 py-4"} {{ category.name }}
         {% endfor %}
-
         {% for page_in_nav in site.pages %}
         {% if page_in_nav.listed? %}
         {% if page_in_nav.depth == 1 %}
