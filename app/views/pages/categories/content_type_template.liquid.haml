@@ -17,11 +17,12 @@ content_type: "categories"
 {% endblock %}
 
 {% block content/header %}
-.bg-primary.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+.bg-primary.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges-kitchen-skills-cover.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
   .page-header-caption
     %h1.text-white {{ category.name }}
     %span.line-title.bg-primary.mb-3
-    %p.mb-0.lead.text-white {{ category.brief }}
+    %p.mb-3.lead.text-white {{ category.brief }}
+    .sharethis-inline-share-buttons
 {% endblock %}
 
 {% block content/main %}
@@ -46,5 +47,5 @@ content_type: "categories"
     The Knack modules are licensed under a Creative Commons 
     %br
     Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-  %a.btn.btn-lg.btn-outline-light{href: "#"} Download Zip File!
+  %a.btn.btn-lg.btn-outline-light{href: "{{ category.file.url }}"} Download Zip File!
 {% endblock %}

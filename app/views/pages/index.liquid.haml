@@ -2,40 +2,14 @@
 title: Home page
 published: true
 handle: home
-editable_elements:
-  content/main/row_header: What is Knack?
-  content/main/row_header_middle: Put Knack to Work In Your Organization
-  content/main/row_header_last: What is Next For Knack?
-  content/header/index_header: Putting skills to work for impact driven companies
-  content/header/index_subheader: Deep dive expose the truth, boots on the ground
-    NGO circular incubator equal opportunity technology.
-  content/main/row_content: An initiative of the Potluck Cafe Society, Knack is a
-    supportive training program for individuals with barriers to traditional employment.  Knack
-    uses micro-credentials, or short training modules where industry level certifications
-    are broken down into individual skills.
-  content/main/row_content_middle: This website houses training materials developed
-    during the first 2.5 years of the Knack project. These materials are available
-    under a Creative Commons license for community use.  All we ask is that you credit
-    us for the content you use, and do not try to make money with these modules.
-  content/main/row_content_last: Potluck is taking the rest of 2018 to reconsider
-    the direction of the Knack training program.  Stay tuned for an update in 2019.
-    Read our 2018 report on learnings, as the Potluck team endeavoured to develop
-    content, deliver training, and match employers and Knack “earners” with employment.
-  content/header/header_image: "/samples/pages/potluck-cafe-society.jpg"
-  content/callout/header: Take Me To The Training Modules
-  content/callout/subheader: "The Knack modules are licensed under a Creative Commons\r\n
-    \   <br>\r\n    Attribution-Non-Commercial-No Derivatives 4.0 International License."
-  content/main/feature_image_1: "/samples/pages/knack-ballroom.jpg"
-  content/main/feature_image: ''
-  content/main/feature_image_3: "/samples/pages/banner-congrats.jpg"
-  content/main/feature_image_2: "/samples/pages/workshop.jpg"
+
 ---
 {% extends 'layouts/basic' %}
 
 
 
 {% block content/header %}
-.bg-primary.py-5.page-header{style: "background: url({% capture image_url %}{% editable_file 'header_image' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+.bg-primary.py-5.page-header{style: "background: url({% capture image_url %}{% editable_file 'header_image' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'knack-index-cover.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
   .page-header-caption.text-white
     %h1
       {% editable_text "index_header", format: raw, rows: 2 %}
@@ -53,8 +27,8 @@ editable_elements:
 
 
 {% block content/main %}
-.container
-  .row
+.container.featurette-container
+  .row.pb-5
     .col-md-7
       %h1.mb-2.featurette-heading
         {% editable_text "row_header", format: raw, rows: 2 %}
@@ -65,13 +39,14 @@ editable_elements:
         {% editable_text "row_content", format: raw, rows: 5 %}
         An initiative of the Potluck Cafe Society, Knack is a supportive training program for individuals with barriers to traditional employment.  Knack uses micro-credentials, or short training modules where industry level certifications are broken down into individual skills.
         {% endeditable_text %}
-      %a.btn.btn-outline-secondary.btn-lg{href: "/what-are-micro-credentials"} What are Micro-Credentials?
+      %p.lead.mb-0
+        %a.font-weight-normal{href: "/what-are-micro-credentials"} What are Micro-Credentials?
 
     .col-md-5
-      .featurette-image.mx-auto.bg-info{style: "background: url({% capture image_url %}{% editable_file 'feature_image_1' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+      .featurette-image.mx-auto.bg-info{style: "background: url({% capture image_url %}{% editable_file 'feature_image_1' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'knack-ballroom.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 
-  %hr.featurette-divider/
-  .row
+
+  .row.py-5
     .col-md-7.order-md-2
       %h1.mb-2.featurette-heading
         {% editable_text "row_header_middle", format: raw, rows: 2 %}
@@ -82,14 +57,14 @@ editable_elements:
         {% editable_text "row_content_middle", format: raw, rows: 5 %}
         This website houses training materials developed during the first 2.5 years of the Knack project. These materials are available under a Creative Commons license for community use.  All we ask is that you credit us for the content you use, and do not try to make money with these modules.
         {% endeditable_text %}
-
-      %a.btn.btn-outline-primary.btn-lg.mr-2{href: "/categories/soft-skills"} See The Soft Skills
-      %a.btn.btn-outline-secondary.btn-lg{href: "/categories/kitchen-skills"} See The Kitchen Skills
+      %p.lead.mb-0
+        %a.font-weight-normal.d-inline-block{href: "/categories/soft-skills"} See The Soft Skills
+        %a.font-weight-normal.text-secondary.d-inline-block.ml-5{href: "/categories/kitchen-skills"} See The Kitchen Skills
     .col-md-5.order-md-1
-      .featurette-image.mx-auto.bg-primary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_2' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+      .featurette-image.mx-auto.bg-primary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_2' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'knack-index-facilitation.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 
-  %hr.featurette-divider/
-  .row
+
+  .row.pt-5
     .col-md-7
       %h1.mb-2.featurette-heading
         {% editable_text "row_header_last", format: raw, rows: 2 %}
@@ -100,32 +75,39 @@ editable_elements:
         {% editable_text "row_content_last", format: raw, rows: 5 %}
         Potluck is taking the rest of 2018 to reconsider the direction of the Knack training program.  Stay tuned for an update in 2019. Read our 2018 report on learnings, as the Potluck team endeavoured to develop content, deliver training, and match employers and Knack “earners” with employment.
         {% endeditable_text %}
-      %a.btn.btn-outline-secondary.btn-lg.mr-2{href: "#"} Read The Report
-      %a.btn.btn-outline-primary.btn-lg{href: "https://www.potluckcatering.org/newsletter"} Sign Up For The Newsletter
+      %p.lead.mb-0
+        %a.font-weight-normal.d-inline-block{href: "https://knackengine.s3.us-west-2.amazonaws.com/sites/5b47a7cd0ee3030004a9b69b/assets/5b4833106bd33400042051bc/Knack_Report-on-Findings.pdf"} Read The Report
+        %a.font-weight-normal.text-secondary.d-inline-block.ml-5{href: "https://www.potluckcatering.org/newsletter"} Sign Up For The Newsletter
     .col-md-5
-      .featurette-image.mx-auto.bg-secondary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_3' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'micro-banner.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+      .featurette-image.mx-auto.bg-secondary{style: "background: url({% capture image_url %}{% editable_file 'feature_image_3' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'knack-index-graduation.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
 {% endblock %}
 
 {% block content/callout %}
-.bg-primary.py-5.text-center
-  %h2.mb-3.text-white {% editable_text "header", format: raw, rows: 2 %}Take Me To The Training Modules{% endeditable_text %}
-  %p.text-white 
-    {% editable_text "subheader", format: raw, rows: 2 %}
-    The Knack modules are licensed under a Creative Commons 
-    %br
-    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-    {% endeditable_text %}
-  {% for category in contents.categories %}
-  %a.btn.btn-lg.btn-outline-light.mr-2{href: "{% path_to category %}"} See The {{ category.name }}
-  {% endfor %}
+.bg-dark.py-5.text-center
+  .container
+    .row
+      .col-sm-10.mx-auto
+        %h2.text-light {% editable_text "header", format: raw, rows: 2 %}Knack's Training Modules{% endeditable_text %}
+        %span.line-title.bg-primary.mb-4.mx-auto
+        %p.text-light.lead.mb-4
+          {% editable_text "subheader", format: raw, rows: 4 %}
+          Knack has 7 Soft Skills and 6 Kitchen Skills modules available for download. Each module comes with a facilitator guide, learner handout, short quiz or other evidence of learning, and supplementary workshop materials (i.e. power point presentation). As everyone has different learning styles, Knack’s modules are adaptable to self-directed, one-on-one, or small group facilitation.
+          {% endeditable_text %}
+        {% for category in contents.categories %}
+        %a.btn.btn-lg.btn-outline-light.mr-2{href: "{% path_to category %}"} See The {{ category.name }}
+        {% endfor %}  
+
 
 .bg-white.py-5
   .container
-    %p.text-center.font-weight-normal.mb-5 Proudly Supported By
-    .row
-      .col-sm-6.text-right.pr-5
+    %h5.text-center.font-weight-normal.mb-5 Proudly Supported By
+    .row.text-center
+      .col-sm-4.align-self-center
         %img.img-fluid{src:" {{ 'vancouverfoundation.png' | theme_image_url }} ", style: "width: 300px;"}
-      .col-sm-6.pl-5
+      .col-sm-4.align-self-center
         %img.img-fluid{src:" {{ 'ledlab.png' | theme_image_url }} ", style: "width: 300px;"}
+      .col-sm-4.align-self-center
+        %img.img-fluid{src:" {{ 'eastsideworks.png' | theme_image_url }} ", style: "width: 300px;"}
+
 {% endblock %}
 

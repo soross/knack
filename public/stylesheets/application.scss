@@ -23,7 +23,7 @@ nav.navbar {
   .nav-link {
     font-weight: 700;
     &:hover {
-      // color: #a4cf60;
+      color: #a4cf60 !important;
     }
     &.active {
       border-bottom: 3px solid #a4cf60;
@@ -83,6 +83,22 @@ span.line-title {
     background: rgba(0,0,0,0.45);
   }
 }
+
+.solid-bg {
+  position: relative;
+  min-height: 32rem;
+  .page-header-caption {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    left: 15%;
+
+  }
+}
+
 
 .credential-header {
   position: relative;
@@ -246,6 +262,11 @@ footer {
   background-color: #777;
 }
 
+.featurette-container {
+  a {
+    text-decoration: underline;
+  }
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -268,3 +289,5 @@ footer {
     margin-top: 7rem;
   }
 }
+
+@import "mobile";

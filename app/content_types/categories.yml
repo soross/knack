@@ -41,14 +41,13 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - brief: # The lowercase, underscored name of the field
     label: Brief # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: Text beneath the header
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -56,7 +55,6 @@ fields:
     label: Cover photo # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - modules:
@@ -68,3 +66,9 @@ fields:
     inverse_of: category  # Define the name of the field referring to Tests in the target content type
     ui_enabled: true # If you want to manage the entries of the relationship directly from the source entry
 
+- file: # The lowercase, underscored name of the field
+    label: File # Human readable name of the field
+    type: file
+    required: false
+    hint: Zip file for download
+    localized: false

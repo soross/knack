@@ -2,13 +2,16 @@
 title: Page not found
 published: true
 ---
-{% extends 'layouts/default' %}
+{% extends 'layouts/basic' %}
 
 {% block content %}
-.container
-  .jumbotron
-    {% editable_text jumbotron, rows: 5, priority: 1 %}
-    %h1.text-danger Arrggggh, page not found
-    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-    {% endeditable_text %}
+
+.bg-primary.py-5.solid-bg
+  .page-header-caption
+    %h1.text-light
+      {% editable_text "header", format: raw, rows: 2 %}
+      Arrggggh, page not found
+      {% endeditable_text %}
+    %span.line-title.bg-light.mb-3
+    %p.mb-3.lead.text-light {% editable_text "subheader", format: raw, rows: 2 %} We're sorry the page you requested is either unavailable or the URL is incorrect. {% endeditable_text %}
 {% endblock %}
