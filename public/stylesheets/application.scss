@@ -22,12 +22,17 @@ nav.navbar {
 nav.navbar {
   .nav-link {
     font-weight: 700;
+    &:hover {
+      // color: #a4cf60;
+    }
     &.active {
       border-bottom: 3px solid #a4cf60;
     }
   }  
 }
-
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+      // color: #a4cf60 !important;
+}
 
 
 h1,h2,h3,h4,h5,h6 {

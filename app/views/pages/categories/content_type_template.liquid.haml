@@ -3,12 +3,18 @@ title: Category Template
 listed: false
 published: true
 content_type: "categories"
-# editable_elements:
-#   'some_block/some_slug': "<text>"
-#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
 ---
 
 {% extends 'layouts/basic' %}
+
+{% block og %}
+%meta{:property => "og:title", :content => "Free {{ category.name }} Training Modules"}/
+%meta{:property => "og:site_name", :content => "Knack - An Initiative of the Potluck Cafe Society"}/
+%meta{:property => "og:url", :content => "{{ page.fullpath }}"}/
+%meta{:property => "og:image", :content => "{{ category.cover_photo.url }}"}/
+%meta{:property => "og:description", :content => "Knack, an initiative of the Potluck Cafe Society, is pleased to share with trainers and social enterprises our {{ category.name }} micro-credential training modules."}/
+{% endblock %}
 
 {% block content/header %}
 .bg-primary.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
@@ -27,7 +33,7 @@ content_type: "categories"
         %img.img-responsive.mb-0.mr-3{src: "{{ module.badge.url }}"}
         .media-body
           %h4.text-secondary.mb-2 {{ module.name }}
-          %p.mb-2 {{ module.description | strip_html | truncate: 120 }}
+          %p.mb-2 {{ module.description | strip_html | truncate: 160 }}
           %a.text-secondary.text-underline{href: "{% path_to module %}"} Read More
     {% endfor %}
 

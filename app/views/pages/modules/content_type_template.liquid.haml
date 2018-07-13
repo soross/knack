@@ -7,31 +7,44 @@ content_type: "modules"
 #   'some_block/some_slug': "<text>"
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
+
 {% extends layouts/basic %}
+
+{% block og %}
+%meta{:property => "og:title", :content => "Free {{ module.name }} Training Module"}/
+%meta{:property => "og:site_name", :content => "Knack - An Initiative of the Potluck Cafe Society"}/
+%meta{:property => "og:url", :content => "{{ page.fullpath }}"}/
+%meta{:property => "og:image", :content => "{{ module.badge.url }}"}/
+%meta{:property => "og:description", :content => "Knack, an initiative of the Potluck Cafe Society, is pleased to share with trainers and social enterprises our {{ module.name }} micro-credential training module."}/
+{% endblock %}
 
 {% block content/header %}
 .bg-info.py-5.credential-header
   .credential-header-caption
     %h1.text-dark {{ page.title }}
     %span.line-title.bg-dark.mb-3
-    %p.mb-0.lead.text-dark Micro-Credential
+    %p.mb-0.lead.text-dark {{ module.category.name }} Micro-Credential
 {% endblock %}
 
 {% block content/main %}
-
 .container.micro-credential-content
-  %h3.text-secondary Description
+  %h3.text-secondary Issuer
+  %span.line-title.bg-secondary.mb-3
+  Knack, an initiative of the Potluck Café Society and partnering programs.
+  %br
+  %a{href: "https://www.knackworks.ca{% path_to module %}"} https://www.knackworks.ca{% path_to module %}
+
+  %h3.text-secondary.mt-5 Description
   %span.line-title.bg-secondary.mb-3
   {{ module.description }}
 
   %h3.text-secondary.mt-5 Criteria
   %span.line-title.bg-secondary.mb-3
   {{ module.criteria }}
-  
 
   %h3.text-secondary.mt-5 Evidence
   %span.line-title.bg-secondary.mb-3
-  {{ module.evidencegg }}
+  {{ module.evidence }}
 
 {% endblock %}
 
@@ -42,5 +55,5 @@ content_type: "modules"
     The Knack modules are licensed under a Creative Commons 
     %br
     Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-  %a.btn.btn-lg.btn-outline-light{href: "#"} Download Zip File!
+  %a.btn.btn-lg.btn-outline-light{href: "{{ module.file.url }}"} Download Zip File!
 {% endblock %}

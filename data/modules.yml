@@ -1,119 +1,190 @@
-- "Dish Machine Operator":
-    description: "Omnis molestiae illo quia exercitationem et. Aliquid non earum. Rem optio quia est eius."
-    criteria: "Ullam tenetur omnis sequi. Eos dicta mollitia doloribus sit architecto cumque non. Non error dolorem necessitatibus deleniti omnis. Adipisci vitae animi dicta et. Libero consequatur quisquam reiciendis."
-    evidence: "Omnis natus doloribus distinctio recusandae. Ipsam illo architecto iusto dolorum quae sit temporibus. Sit voluptatem ipsa eveniet quia libero incidunt voluptates."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: "Kitchen Skills"
-
-- "Knife Skills":
-    description: "Dolorem est provident sit non. Ut iusto architecto. Labore vel consectetur ratione quas totam ea harum."
-    criteria: "Ad animi dolorem. Qui molestias ut id molestiae in ex. Fuga aut ut sapiente. Voluptates esse ab. Possimus necessitatibus eos laboriosam qui ducimus sapiente."
-    evidence: "Doloremque accusamus et corporis quos assumenda autem eum. Voluptates est sequi quaerat. Ratione et quam eos dolore. Laboriosam qui totam voluptatibus dolores sit numquam dolor."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Kitchen Skills
-
-
-- "Safety in a Kitchen":
-    description: "Eos eaque delectus quis veniam architecto veritatis. Velit accusamus laudantium blanditiis. Aut natus sed dolor dolores."
-    criteria: "Quia consequatur debitis sequi tempore accusantium ducimus. Illum corporis et autem. Voluptas cum possimus nihil velit ut et."
-    evidence: "Quia qui eos. Voluptatem sed expedita repellendus ab. Nostrum deserunt fuga est nam delectus et omnis. Quia non numquam animi est."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Kitchen Skills
-
-
-- "Sanitation":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Kitchen Skills
-
-- "Storage & Receiving":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Kitchen Skills
-
-
-- "Tools & Equipment":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Kitchen Skills
-
-
-- "Workplace Communication":
-    description: "Omnis molestiae illo quia exercitationem et. Aliquid non earum. Rem optio quia est eius."
-    criteria: "Ullam tenetur omnis sequi. Eos dicta mollitia doloribus sit architecto cumque non. Non error dolorem necessitatibus deleniti omnis. Adipisci vitae animi dicta et. Libero consequatur quisquam reiciendis."
-    evidence: "Omnis natus doloribus distinctio recusandae. Ipsam illo architecto iusto dolorum quae sit temporibus. Sit voluptatem ipsa eveniet quia libero incidunt voluptates."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-
-- "Teamwork":
-    description: "Dolorem est provident sit non. Ut iusto architecto. Labore vel consectetur ratione quas totam ea harum."
-    criteria: "Ad animi dolorem. Qui molestias ut id molestiae in ex. Fuga aut ut sapiente. Voluptates esse ab. Possimus necessitatibus eos laboriosam qui ducimus sapiente."
-    evidence: "Doloremque accusamus et corporis quos assumenda autem eum. Voluptates est sequi quaerat. Ratione et quam eos dolore. Laboriosam qui totam voluptatibus dolores sit numquam dolor."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-
-- "Conflict Resolution":
-    description: "Eos eaque delectus quis veniam architecto veritatis. Velit accusamus laudantium blanditiis. Aut natus sed dolor dolores."
-    criteria: "Quia consequatur debitis sequi tempore accusantium ducimus. Illum corporis et autem. Voluptas cum possimus nihil velit ut et."
-    evidence: "Quia qui eos. Voluptatem sed expedita repellendus ab. Nostrum deserunt fuga est nam delectus et omnis. Quia non numquam animi est."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-
-- "Personal Finances":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-- "Resource Navigation":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-- "Time Management":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-- "Professionalism":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
-- "Computer Literacy":
-    description: "Dolore atque accusamus et libero cumque. Enim optio ex similique quo. Alias ducimus qui et culpa illo dignissimos voluptatem."
-    criteria: "Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut quis quis non."
-    evidence: "Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit culpa et mollitia. Cumque dicta ipsum voluptatem sunt."
-    # badge: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # file: /samples/module/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    category: Soft Skills
-
+- Dish Machine Operator:
+    _slug: dish-machine-operator
+    name: Dish Machine Operator
+    description: The holder of this badge has completed a minimum of 1 hour of instruction
+      (including some hands-on experience with a commercial dish machine), and has
+      the skills needed to ensure dishes or any food contact surfaces are properly
+      cleaned and sanitized in a commercial or community food program.
+    criteria: "<div><div><ul><li>Demonstrate ability to wash wares with a commercial
+      dish machine, including machine set-up and breakdown of the process&nbsp;</li><li>Identify
+      potential problems with industrial dish machines, and initial trouble-shooting
+      steps&nbsp;</li><li>Demonstrate how to safely clean and sanitize wares without
+      a dishwasher<br></li></ul></div></div>"
+    evidence: "<ul><li>Attended the Dish Machine Operator learning session and experienced
+      using a commercial dish machine&nbsp;</li><li>Completed the Dish Machine Operator
+      quiz<br></li></ul>"
+    badge: "/samples/content_entries/dish-operator-badge.jpg"
+    category: kitchen-skills
+- Knife Skills:
+    _slug: knife-skills
+    name: Knife Skills
+    description: The holder of this badge has completed a minimum of 1 hour of instruction
+      (including some hands-on experience using a knife for food preparation), and
+      has the skills needed to safely handle knives.
+    criteria: "<ul><li>Demonstrate ability to handle knives in a way that ensures
+      personal safety and maintains knife quality&nbsp;<br></li><li>Identify which
+      knives to use for different food preparation tasks<br></li><li>Identify which
+      cutting boards to use for different foods</li></ul>"
+    evidence: "<ul><li>Attended the Knife Skills learning session and experienced
+      using kitchen knives<br></li><li>Completed the Knife Skills quiz<br></li></ul>"
+    badge: "/samples/content_entries/knife-skills-badge.jpg"
+    category: kitchen-skills
+- Safety in a Kitchen:
+    _slug: safety-in-a-kitchen
+    name: Safety in a Kitchen
+    description: The holder of this badge has completed a minimum of 1 ½ hours of
+      instruction and has an awareness of the practices necessary to ensure personal
+      safety in a food service operation.
+    criteria: "<ul><li>Understand the practices and equipment necessary to ensure
+      personal safety in a food service operation<br></li><li>Define the WHIMIS and
+      its importance<br></li><li>Explain how to put out a small kitchen fire<br></li></ul>"
+    evidence: "<ul><li>Attended the Safety in a Kitchen learning session and reviewed
+      the information in the handout<br></li><li>Completed the Safety in a Kitchen
+      quiz<br></li></ul>"
+    badge: "/samples/content_entries/safety-badge.jpg"
+    category: kitchen-skills
+- Sanitation:
+    _slug: sanitation
+    name: Sanitation
+    description: The holder of this badge has completed a minimum of 1 ½ hours of
+      instruction and has an awareness of the practices necessary to ensure safe food
+      handling practices to prevent food borne illnesses.
+    criteria: "<ul><li>Explain how to handle and store food safely<br></li><li>Describe
+      causes of food borne illness and ways to prevent it<br></li><li>Demonstrate
+      the procedures to maintain a clean and sanitary food service operation<br></li><li>Define
+      the “danger zone” temperature range and its importance<br></li></ul>"
+    evidence: "<ul><li>Attended the Sanitation learning session and reviewed the information
+      in the handout<br></li><li>Completed the Sanitation quiz&nbsp;<br></li></ul><br>"
+    badge: "/samples/content_entries/sanitation-badge.jpg"
+    category: kitchen-skills
+- Storage & Receiving:
+    _slug: storage-and-receiving
+    name: Storage & Receiving
+    description: The holder of this badge has completed a minimum of 1 hour of instruction
+      and has an awareness of the best practices in receiving and storage in a food
+      service operation.
+    criteria: "<ul><li>Demonstrate how to receive food and review an invoice<br></li><li>Demonstrate
+      how to store food properly and safely<br></li></ul>"
+    evidence: "<ul><li>Attended the Storage &amp; Receiving learning session and toured
+      a dry storage area, cooler and freezer<br></li><li>Completed the Storage &amp;
+      Receiving quiz&nbsp;</li></ul>"
+    badge: "/samples/content_entries/receiving-badge.jpg"
+    category: kitchen-skills
+- Tools & Equipment:
+    _slug: tools-and-equipment
+    name: Tools & Equipment
+    description: The holder of this badge has completed a minimum of 1 hour of instruction
+      and has an awareness of common tools and equipment used in a food service operation.
+    criteria: "<ul><li>Identify common kitchen tools and equipment and describe their
+      uses<br></li></ul>"
+    evidence: "<ul><li>Attended the Tools &amp; Equipment learning session and handled
+      or interacted with items as available&nbsp;<br></li><li>Completed the Tools
+      &amp; Equipment quiz<br></li></ul>"
+    badge: "/samples/content_entries/tools-badge.jpg"
+    category: kitchen-skills
+- Workplace Communication:
+    _slug: workplace-communication
+    name: Workplace Communication
+    description: Omnis molestiae illo quia exercitationem et. Aliquid non earum. Rem
+      optio quia est eius.
+    criteria: Ullam tenetur omnis sequi. Eos dicta mollitia doloribus sit architecto
+      cumque non. Non error dolorem necessitatibus deleniti omnis. Adipisci vitae
+      animi dicta et. Libero consequatur quisquam reiciendis.
+    evidence: Omnis natus doloribus distinctio recusandae. Ipsam illo architecto iusto
+      dolorum quae sit temporibus. Sit voluptatem ipsa eveniet quia libero incidunt
+      voluptates.
+    badge: "/samples/content_entries/workplace-communication-badge.jpg"
+    category: soft-skills
+- Teamwork:
+    _slug: teamwork
+    name: Teamwork
+    description: Dolorem est provident sit non. Ut iusto architecto. Labore vel consectetur
+      ratione quas totam ea harum.
+    criteria: Ad animi dolorem. Qui molestias ut id molestiae in ex. Fuga aut ut sapiente.
+      Voluptates esse ab. Possimus necessitatibus eos laboriosam qui ducimus sapiente.
+    evidence: Doloremque accusamus et corporis quos assumenda autem eum. Voluptates
+      est sequi quaerat. Ratione et quam eos dolore. Laboriosam qui totam voluptatibus
+      dolores sit numquam dolor.
+    badge: "/samples/content_entries/teamwork-badge.jpg"
+    category: soft-skills
+- Conflict Resolution:
+    _slug: conflict-resolution
+    name: Conflict Resolution
+    description: Eos eaque delectus quis veniam architecto veritatis. Velit accusamus
+      laudantium blanditiis. Aut natus sed dolor dolores.
+    criteria: Quia consequatur debitis sequi tempore accusantium ducimus. Illum corporis
+      et autem. Voluptas cum possimus nihil velit ut et.
+    evidence: Quia qui eos. Voluptatem sed expedita repellendus ab. Nostrum deserunt
+      fuga est nam delectus et omnis. Quia non numquam animi est.
+    badge: "/samples/content_entries/conflict-resolution-badge.jpg"
+    category: soft-skills
+- Personal Finances:
+    _slug: personal-finances
+    name: Personal Finances
+    description: Dolore atque accusamus et libero cumque. Enim optio ex similique
+      quo. Alias ducimus qui et culpa illo dignissimos voluptatem.
+    criteria: Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat
+      rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui
+      dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut
+      quis quis non.
+    evidence: Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in
+      culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit
+      culpa et mollitia. Cumque dicta ipsum voluptatem sunt.
+    badge: "/samples/content_entries/personal-finance-badge.jpg"
+    category: soft-skills
+- Resource Navigation:
+    _slug: resource-navigation
+    name: Resource Navigation
+    description: Dolore atque accusamus et libero cumque. Enim optio ex similique
+      quo. Alias ducimus qui et culpa illo dignissimos voluptatem.
+    criteria: Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat
+      rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui
+      dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut
+      quis quis non.
+    evidence: Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in
+      culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit
+      culpa et mollitia. Cumque dicta ipsum voluptatem sunt.
+    badge: "/samples/content_entries/resource-navigation-badge.jpg"
+    category: soft-skills
+- Time Management:
+    _slug: time-management
+    name: Time Management
+    description: Dolore atque accusamus et libero cumque. Enim optio ex similique
+      quo. Alias ducimus qui et culpa illo dignissimos voluptatem.
+    criteria: Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat
+      rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui
+      dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut
+      quis quis non.
+    evidence: Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in
+      culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit
+      culpa et mollitia. Cumque dicta ipsum voluptatem sunt.
+    badge: "/samples/content_entries/time-management-badge.jpg"
+    category: soft-skills
+- Professionalism:
+    _slug: professionalism
+    name: Professionalism
+    description: Dolore atque accusamus et libero cumque. Enim optio ex similique
+      quo. Alias ducimus qui et culpa illo dignissimos voluptatem.
+    criteria: Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat
+      rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui
+      dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut
+      quis quis non.
+    evidence: Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in
+      culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit
+      culpa et mollitia. Cumque dicta ipsum voluptatem sunt.
+    badge: "/samples/content_entries/professionalism-badge.jpg"
+    category: soft-skills
+- Computer Literacy:
+    _slug: computer-literacy
+    name: Computer Literacy
+    description: Dolore atque accusamus et libero cumque. Enim optio ex similique
+      quo. Alias ducimus qui et culpa illo dignissimos voluptatem.
+    criteria: Ad dolores quo eum qui nisi mollitia molestiae. Voluptatem rerum quaerat
+      rem officiis inventore hic quasi. Nostrum occaecati et nulla quia enim. Qui
+      dolorem nesciunt laudantium asperiores nulla voluptatum. Et qui numquam aut
+      quis quis non.
+    evidence: Est omnis blanditiis sint debitis dignissimos placeat. Unde labore in
+      culpa sed quidem enim. Vero ut rem ipsum quibusdam optio. Atque sunt et sit
+      culpa et mollitia. Cumque dicta ipsum voluptatem sunt.
+    badge: "/samples/content_entries/computer-literacy-badge.jpg"
+    category: soft-skills

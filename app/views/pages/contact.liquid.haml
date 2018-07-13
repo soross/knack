@@ -2,20 +2,18 @@
 title: Contact
 listed: true
 published: true
-# editable_elements:
-#   'some_block/some_slug': "<text>"
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
 {% extends 'layouts/basic' %}
 
 {% block content/header %}
-.bg-primary.py-5.credential-header
-  .credential-header-caption
+.bg-primary.py-5.page-header{style: "background: url({% capture image_url %}{% editable_file 'header_image' %}{% endeditable_file %}{% endcapture %}{% if image_url != '' %}{{ image_url | image_url }}{% else %}{{ 'facilitating.jpg' | theme_image_url }}{% endif %}) top; background-size: cover;"}
+  .page-header-caption
     %h1.text-white 
       {% editable_text "header", format: raw, rows: 2 %}
       Drop Us A Line!
       {% endeditable_text %}
-    %span.line-title.bg-white.mb-3
+    %span.line-title.bg-primary.mb-3
     %p.mb-0.lead.text-white 
       {% editable_text "subheader", format: raw, rows: 2 %}
       Give us a shout and we will get back to you pronto! We value your feedback.

@@ -9,8 +9,12 @@ local:
 #   password: apassword
 #   # api_key: <your api key here>
 # production:
-#   host: www.example.com
-#   email: john@doe.net
-#   password: apassword
-#   # api_key: <your api key here>
-#   # ssl: true
+#   host: https://station.locomotive.works
+#   handle: celestial-resonance-6527
+#   email: joseph@potluckcatering.com
+#   api_key: c3e2c94ef9e7d9363aac05dc087cc016612232f0
+production:
+  host: https://knackworks.herokuapp.com
+  handle: natural-forest-6607
+  email: joseph@spencercreo.ca
+  api_key: 490c13a3b08180c0a8b551bd23f4b0a8a9d353d0
