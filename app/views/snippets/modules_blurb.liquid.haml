@@ -1,0 +1,13 @@
+.callout-dark.bg-dark.text-center.py-5
+  .container
+    .row
+      .col-sm-8.mx-auto
+        %h2.text-light {% editable_text "header", format: raw, rows: 2 %}Knack's Training Modules{% endeditable_text %}
+        %span.line-title.bg-primary.mb-4.mx-auto
+        %p.text-light.lead.mb-4
+          {% editable_text "subheader", format: raw, rows: 4 %}
+          Knack has 7 Soft Skills and 6 Kitchen Skills modules available for download. Each module comes with a facilitator guide, learner handout, short quiz or other evidence of learning, and supplementary workshop materials (i.e. power point presentation). As everyone has different learning styles, Knack’s modules are adaptable to self-directed, one-on-one, or small group facilitation.
+          {% endeditable_text %}
+        {% for category in contents.categories %}
+        %a{href: "{% path_to category %}", class: "{% cycle '', 'ml-5' %}"} See The {{ category.name }}
+        {% endfor %}  

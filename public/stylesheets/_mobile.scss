@@ -3,8 +3,14 @@
 	nav.navbar.fixed-top {
 		padding: 0 10px;
 	}
-	.page-header .page-header-caption {
+	.page-header .page-header-caption, .credential-header .credential-header-caption {
 		left: 5%; right: 5%;
+	}
+	.featurette-container .lead, .micro-credential-content {
+		font-size: 1.125rem;
+	}
+	.featurette-container h1 {
+		font-size: 2.25rem
 	}
 }
 

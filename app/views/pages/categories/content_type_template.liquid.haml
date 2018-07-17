@@ -6,7 +6,7 @@ content_type: "categories"
 
 ---
 
-{% extends 'layouts/basic' %}
+{% extends 'layouts/default' %}
 
 {% block og %}
 %meta{:property => "og:title", :content => "Free {{ category.name }} Training Modules"}/
@@ -16,36 +16,53 @@ content_type: "categories"
 %meta{:property => "og:description", :content => "Knack, an initiative of the Potluck Cafe Society, is pleased to share with trainers and social enterprises our {{ category.name }} micro-credential training modules."}/
 {% endblock %}
 
-{% block content/header %}
-.bg-primary.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges-kitchen-skills-cover.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
+{% block header %}
+
+{% assign download_link = category.file.url %}
+{% assign the_download = category.name %}
+
+.py-5.page-header{style: "background: url({% if category.cover_photo %}{{ category.cover_photo.url }}{% else %}{{ 'knack-badges-kitchen-skills-cover.jpg' | theme_image_url }}{% endif %}) center center; background-size: cover;"}
   .page-header-caption
-    %h1.text-white {{ category.name }}
+    %h1.text-light {{ category.name }}
     %span.line-title.bg-primary.mb-3
-    %p.mb-3.lead.text-white {{ category.brief }}
-    .sharethis-inline-share-buttons
+    %p.lead.text-light.mb-0
+      {{ category.brief }}   
 {% endblock %}
 
-{% block content/main %}
-.container
-  .row
-    {% for module in category.modules %}
-    .col-lg-6
-      .badge-description.mb-5.media
-        %img.img-responsive.mb-0.mr-3{src: "{{ module.badge.url }}"}
-        .media-body
-          %h4.text-secondary.mb-2 {{ module.name }}
-          %p.mb-2 {{ module.description | strip_html | truncate: 160 }}
-          %a.text-secondary.text-underline{href: "{% path_to module %}"} Read More
-    {% endfor %}
+{% block content %}
+%section.section-spacing
+  .container
+    {% include 'download_success' %}
+    {% include 'download_error' %}
 
+  
+    .row
+      {% for module in category.modules %}
+      %div{class: "col-sm-6 {% cycle '', '' %}"}
+        %a.badge-link{href: "{% path_to module %}" }
+          .media.badge-description.mb-5
+            %img.img-fluid.mb-0.mr-4{src: "{{ module.badge.url }}"}
+            .media-body
+              %h4.text-secondary.mb-2 {{ module.name }}
+              %p.text-dark.mb-0 {{ module.description | strip_html | truncatewords: 20 }}
+      {% endfor %}
 {% endblock %}
 
-{% block content/callout %}
-.bg-primary.py-5.text-center
-  %h2.mb-3.text-white Download All {{ page.title }} Micro-Credentials
-  %p.text-white 
-    The Knack modules are licensed under a Creative Commons 
-    %br
-    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-  %a.btn.btn-lg.btn-outline-light{href: "{{ category.file.url }}"} Download Zip File!
+{% block callout %}
+.callout-primary.bg-primary.py-5
+  .container
+    .row
+      .col-sm-5.align-self-center
+        %h3.text-light.mb-2 Download All Modules
+        %p.text-light.mb-0.mt-2
+          We only ask for your email to know who's downloading our content. We will not pass on your email to any third parties. 
+      .col-sm-7.align-self-center.text-right
+        %form.form.form-inline.d-block.download-form.mb-0#download_form{:action => "{{ contents.downloads.public_submission_url }}", :method => "post"}
+          {% csrf_param %}
+          %input{:name => "success_callback", :type => "hidden", :value => "{% path_to page %}?download=success"}/
+          %input{:name => "error_callback", :type => "hidden", :value => "{% path_to page %}"}/
+          %input{:name => "content[downloaded_file]", :type => "hidden", :value => "{{ the_download }}"}/
+          %input.form-control.mr-1{:name => "content[your_name]", :type => "text", placeholder: "Your name"}/
+          %input.form-control.mr-1{type: "email", name: "content[email]", placeholder: "Enter your email"}
+          %button.btn.btn-lg.btn-info.w-auto{type: "submit"} Download!
 {% endblock %}

@@ -1,26 +1,20 @@
-- Joseph M:
-    _slug: joseph-m
-    name: Joseph M
-    email: joseph@spencercreo.ca
-    phone: 778 873 5534
-    body: " Changemaker correlation radical effective altruism cultivate; mass incarceration
-      innovate human-centered. Living a fully ethical life innovation social enterprise
-      deep dive to. Social capital, black lives matter social entrepreneurship; social
-      return on investment collaborative cities move the needle granular social return
-      on investment contextualize."
-- Alisha Maxfield:
-    _slug: alisha-maxfield
-    name: Alisha Maxfield
-    email: alisha.maxfield@gmail.com
-    phone: 604-349-1987
-    body: Changemaker correlation radical effective altruism cultivate; mass incarceration
-      innovate human-centered. Living a fully ethical life innovation social enterprise
-      deep dive to. Social capital, black lives matter social entrepreneurship; social
-      return on investment collaborative cities move the needle granular social return
-      on investment contextualize.
-- Alisha Maxfield:
-    _slug: alisha-maxfield-1
-    name: Alisha Maxfield
-    email: alisha.maxfield@gmail.com
-    phone: '6043491987'
-    body: Hi, love your training modules!
+- "Sample 1":
+    phone: "Voluptatem asperiores officia occaecati repudiandae et neque."
+    body: "Nesciunt et eius reprehenderit rerum laudantium sed. Amet velit omnis. Accusantium perferendis sint dolorem."
+    newsletter_opt_in: true # Or false
+
+- "Sample 2":
+    phone: "Eaque magnam voluptatem voluptatem ut sequi ea."
+    body: "Aut et eius. Nesciunt nulla quidem voluptatum minima illum. Aliquid natus vitae numquam est."
+    newsletter_opt_in: true # Or false
+
+- "Sample 3":
+    phone: "Laudantium velit harum pariatur quas earum nihil quo."
+    body: "Sed rerum officiis soluta. Dolorem quidem sed. Dolorum et ullam. Aut illum minus nam amet. Molestias non veniam."
+    newsletter_opt_in: true # Or false
+
+- "Sample 4":
+    phone: "Dignissimos provident ab minima."
+    body: "Sunt quos voluptatem qui atque. Voluptas dolor maiores quia. At exercitationem voluptates sunt impedit est reprehenderit. Voluptatem fugit iure eos temporibus."
+    newsletter_opt_in: true # Or false
+

@@ -1,0 +1,17 @@
+---
+title: Sidebar
+is_layout: true
+---
+{% extends 'layouts/default' %}
+
+{% block content %}
+%section.section-spacing
+  .container
+    .row
+      .col-sm-7.mr-auto
+        {% block main %}
+        {% endblock %}
+      .col-sm-4
+        {% block sidebar %}
+        {% endblock %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% if params.download == "success" %}
+.alert.alert-primary.alert-dismissible.fade.show.mb-5
+  %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+    %span{"aria-hidden" => "true"} ×
+  %h5 Download link
+  %p.mb-2 
+    %a.font-weight-bold.text-secondary{href: "{{ download_link }}", style: "text-decoration:underline;"} 
+      Click here to start downloading the {{ the_download }} modules. 
+    Closing this window will remove the download link.
+{% endif %}

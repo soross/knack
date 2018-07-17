@@ -3,12 +3,9 @@ title: Module Template
 listed: false
 published: true
 content_type: "modules"
-# editable_elements:
-#   'some_block/some_slug': "<text>"
-#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
 
-{% extends layouts/basic %}
+{% extends layouts/sidebar %}
 
 {% block og %}
 %meta{:property => "og:title", :content => "Free {{ module.name }} Training Module"}/
@@ -18,43 +15,35 @@ content_type: "modules"
 %meta{:property => "og:description", :content => "Knack, an initiative of the Potluck Cafe Society, is pleased to share with trainers and social enterprises our {{ module.name }} micro-credential training module."}/
 {% endblock %}
 
-{% block content/header %}
-.bg-info.py-5.credential-header
-  .credential-header-caption
+{% block header %}
+{% assign download_link = module.file.url %}
+{% assign the_download = module.name %}
+.page-header-sm.bg-info.py-5
+  .page-header-caption-sm
     %h1.text-dark {{ page.title }}
-    %span.line-title.bg-dark.mb-3
-    %p.mb-3.lead.text-dark {{ module.category.name }} Micro-Credential
-    .sharethis-inline-share-buttons
+    %span.line-title.bg-dark.mb-0
 {% endblock %}
 
 {% block content/main %}
-.container.micro-credential-content
-  %h3.text-secondary Issuer
-  %span.line-title.bg-secondary.mb-3
-  Knack, an initiative of the Potluck Café Society and partnering programs.
-  %br
-  %a{href: "https://www.knackworks.ca{% path_to module %}"} https://www.knackworks.ca{% path_to module %}
-
-  %h3.text-secondary.mt-5 Description
-  %span.line-title.bg-secondary.mb-3
+{% include 'download_error' %}
+{% include 'download_success' %}
+.micro-credential-content.text-dark
+  %h3.text-secondary.mb-3 Description
   {{ module.description }}
-
-  %h3.text-secondary.mt-5 Criteria
-  %span.line-title.bg-secondary.mb-3
+  %h3.text-secondary.mt-5.mb-3 Criteria
   {{ module.criteria }}
-
-  %h3.text-secondary.mt-5 Evidence
-  %span.line-title.bg-secondary.mb-3
+  %h3.text-secondary.mt-5.mb-3 Evidence
   {{ module.evidence }}
-
-{% endblock %}
-
-{% block content/callout %}
-.bg-primary.py-5.text-center
-  %h2.mb-3.text-white Download The {{ page.title }} Micro-Credential
-  %p.text-white 
-    The Knack modules are licensed under a Creative Commons 
+  %h3.text-secondary.mt-5.mb-3 Issuer
+  %p.mb-3 
+    Knack, an initiative of the Potluck Café Society and partnering programs.
     %br
-    Attribution-Non-Commercial-No Derivatives 4.0 International License. 
-  %a.btn.btn-lg.btn-outline-light{href: "{{ module.file.url }}"} Download Zip File!
+    %a{href: "https://www.knackworks.ca{% path_to module %}"} https://www.knackworks.ca{% path_to module %}   
+.sharethis-inline-share-buttons.mt-5
 {% endblock %}
+
+{% block content/sidebar %}
+{% include 'download_form_sidebar' %}
+{% endblock %}
+
+

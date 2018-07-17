@@ -14,6 +14,7 @@
       using a commercial dish machine&nbsp;</li><li>Completed the Dish Machine Operator
       quiz<br></li></ul>"
     badge: "/samples/content_entries/dish-operator-badge.jpg"
+    file: "/samples/content_entries/dish-operator-badge.jpg"
     category: kitchen-skills
 - Knife Skills:
     _slug: knife-skills
@@ -28,6 +29,7 @@
     evidence: "<ul><li>Attended the Knife Skills learning session and experienced
       using kitchen knives<br></li><li>Completed the Knife Skills quiz<br></li></ul>"
     badge: "/samples/content_entries/knife-skills-badge.jpg"
+    file: "/samples/content_entries/knife-skills-badge.jpg"
     category: kitchen-skills
 - Safety in a Kitchen:
     _slug: safety-in-a-kitchen
@@ -42,6 +44,7 @@
       the information in the handout<br></li><li>Completed the Safety in a Kitchen
       quiz<br></li></ul>"
     badge: "/samples/content_entries/safety-badge.jpg"
+    file: "/samples/content_entries/safety-badge.jpg"
     category: kitchen-skills
 - Sanitation:
     _slug: sanitation
@@ -54,8 +57,9 @@
       the procedures to maintain a clean and sanitary food service operation<br></li><li>Define
       the “danger zone” temperature range and its importance<br></li></ul>"
     evidence: "<ul><li>Attended the Sanitation learning session and reviewed the information
-      in the handout<br></li><li>Completed the Sanitation quiz&nbsp;<br></li></ul><br>"
+      in the handout<br></li><li>Completed the Sanitation quiz&nbsp;<br></li></ul>"
     badge: "/samples/content_entries/sanitation-badge.jpg"
+    file: "/samples/content_entries/sanitation-badge.jpg"
     category: kitchen-skills
 - Storage & Receiving:
     _slug: storage-and-receiving
@@ -69,6 +73,7 @@
       a dry storage area, cooler and freezer<br></li><li>Completed the Storage &amp;
       Receiving quiz&nbsp;</li></ul>"
     badge: "/samples/content_entries/receiving-badge.jpg"
+    file: "/samples/content_entries/receiving-badge.jpg"
     category: kitchen-skills
 - Tools & Equipment:
     _slug: tools-and-equipment
@@ -81,6 +86,7 @@
       or interacted with items as available&nbsp;<br></li><li>Completed the Tools
       &amp; Equipment quiz<br></li></ul>"
     badge: "/samples/content_entries/tools-badge.jpg"
+    file: "/samples/content_entries/tools-badge.jpg"
     category: kitchen-skills
 - Workplace Communication:
     _slug: workplace-communication

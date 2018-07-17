@@ -25,8 +25,12 @@ is_layout: false
   %body
     #wrapper
       {% include 'nav' %}
+      {% block header %}
+      {% endblock %}
       {% block content %}
       {% endblock %}
+      {% block callout %}
+      {% endblock %}      
       {% include 'footer' %}
     {{ 'jquery.min.js' | javascript_tag }}
     {{ 'popper.min.js' | javascript_tag }}

@@ -1,15 +1,13 @@
-%footer.footer.bg-dark.text-white.py-5
+%footer.footer.bg-dark.text-light.py-5
   .container
     .media
       %img.mr-2{src:" {{ 'knack-logo-bw-transparent.png' | theme_image_url }} "}
       .media-body.align-self-center
         %nav.nav.mb-2
           %a{:href => "{% path_to home %}", class: "{% if page.handle == 'home' %}active{% endif %} nav-link"} Home
-
           {% for category in contents.categories %}
-          %a{href: "{% path_to category %}", class: "{% if page.title == category.name %}active{% endif %} nav-link"} {{ category.name }}
+          %a{href: "{% path_to category %}", class: "{% if page.title == category.name or module.category.name == category.name %}active{% endif %} nav-link"} {{ category.name }}
           {% endfor %}
-
           {% for page_in_nav in site.pages %}
           {% if page_in_nav.listed? %}
           {% if page_in_nav.depth == 1 %}
@@ -17,13 +15,14 @@
           {% endif %}
           {% endif %}
           {% endfor %}
-
-        %p.text-white.mb-0.ml-3.text-muted 
+        %p.text-light.text-muted.mb-2.ml-3
+          The Knack modules are licensed under a Creative Commons Attribution Non-Commercial-No Derivatives 4.0 International License. 
+        %p.text-light.text-muted.mb-0.ml-3 
           An initiative of the 
-          %a.text-white{href: "https://www.potluckcatering.org"} Potluck Cafe Society 
-          {{ now | localized_date: '%Y' }}. 
-          Website, a labour of &#x2764; by 
-          %a.text-white{href: "mailto:joseph@josephmasongsong.com"} Joseph.
+          %a.text-light{href: "https://www.potluckcatering.org"} Potluck Cafe Society 
+          2015 - {{ now | localized_date: '%Y' }}. 
+
+
 
             
 

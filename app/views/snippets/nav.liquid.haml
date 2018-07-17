@@ -1,22 +1,20 @@
 %nav.navbar.navbar-light.fixed-top.bg-white.navbar-expand-sm
-  .container-fluid
-
+  .container
     %a.navbar-brand{href: "{% path_to home %}"} {{ 'knack-logo-converted.png' | theme_image_tag }}
     %button.navbar-toggler{"aria-controls" => "navbarMain", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarMain", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
-    
     #navbarMain.navbar-collapse.collapse
       %ul.navbar-nav.ml-auto
         {% for category in contents.categories %}
         %li.nav-item
-          %a{href: "{% path_to category %}", class: "{% if page.title == category.name %}active{% endif %} nav-link text-dark px-3 py-4"} {{ category.name }}
+          %a{href: "{% path_to category %}", class: "{% if page.title == category.name or module.category.name == category.name %}active{% endif %} nav-link text-secondary px-3 py-4"} {{ category.name }}
         {% endfor %}
         {% for page_in_nav in site.pages %}
         {% if page_in_nav.listed? %}
         {% if page_in_nav.depth == 1 %}
         {% if page_in_nav.children.size > 0 %}
         %li.nav-item.dropdown
-          %a#navbarDropdown.nav-link.text-dark.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          %a#navbarDropdown.nav-link.text-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             {{ page_in_nav.title }}
           .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
             {% for child in page_in_nav.children %}
@@ -24,11 +22,12 @@
             {% endfor %}
         {% else %}
         %li.nav-item
-          %a{href: "{% path_to page_in_nav %}", class: "{% if page.fullpath == page_in_nav.fullpath %}active{% endif %} nav-link text-dark px-3 py-4"} {{ page_in_nav.title }}
+          %a{href: "{% path_to page_in_nav %}", class: "{% if page.fullpath == page_in_nav.fullpath %}active{% endif %} nav-link text-secondary px-3 py-4"} {{ page_in_nav.title }}
         {% endif %}
         {% endif %}
         {% endif %}
         {% endfor %}
+
 
 
 

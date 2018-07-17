@@ -5,7 +5,7 @@ name: Modules
 slug: modules
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: The micro-dential to be earned including description, criteria, evidence, image and zip file.
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
@@ -17,7 +17,7 @@ order_by: manually
 # order_direction: asc
 
 # Specify a field slug to group entries by that field in the back-office.
-# group_by: <your field>
+group_by: category
 
 # Activate public 'create' API (e.g for a contact form)
 # public_submission_enabled: false
@@ -33,7 +33,7 @@ order_by: manually
 #   hidden: false           # hidden for authors?
 
 # By default, the back-office displays the _label property (see label_field_name) of the content entry. This can be modified by writing your own Liquid template below:
-# entry_template: '<a href="{{ link }}">{{ entry._label }}</a>' # The default template
+entry_template: '<a href="{{ link }}">{{ entry._label }}</a><br>{{entry.description}}' # The default template
 
 # A list describing each field
 fields: 
@@ -41,14 +41,14 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
+    hint: Name of mico-credential
     localized: false
 
 - description: # The lowercase, underscored name of the field
     label: Description # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: Description of mico-credential
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -56,7 +56,7 @@ fields:
     label: Criteria # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: List criteria
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -64,7 +64,7 @@ fields:
     label: Evidence # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: How can we verify that the micro-credential is has been earned?
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -72,14 +72,14 @@ fields:
     label: Badge # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: Micro-credential image
     localized: false
 
 - file: # The lowercase, underscored name of the field
     label: File # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: The zip file to be downloaded
     localized: false
 
 - category: # Name of the field

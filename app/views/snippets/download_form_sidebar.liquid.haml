@@ -1,0 +1,15 @@
+.bg-primary.sidebar.mb-3.p-4
+  %h3.text-light.text-center.mb-4 Download Module
+  %form.form.mb-0{:action => "{{ contents.downloads.public_submission_url }}", :method => "post"}
+    {% csrf_param %}
+    %input{:name => "success_callback", :type => "hidden", :value => "{% path_to page %}?download=success"}/
+    %input{:name => "error_callback", :type => "hidden", :value => "{% path_to page %}"}/
+    %input{:name => "content[downloaded_file]", :type => "hidden", :value => "{{ the_download }}"}/
+    .form-group
+      %input.form-control{:name => "content[your_name]", :type => "text", placeholder: "Your name"}/
+    .form-group
+      %input.form-control{type: "email", name: "content[email]", placeholder: "Enter your email"}
+    .form-group.mb-0
+      %button.btn.btn-lg.btn-info.btn-block.mb-3{type: "submit"} Download!
+  %p.text-light.mb-0
+    We only ask for your email to know who's downloading our training manuals. We will not pass on your email to any third parties.

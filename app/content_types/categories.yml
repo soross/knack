@@ -5,7 +5,7 @@ name: Categories
 slug: categories
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: The different collections of micro-credentials
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
@@ -33,13 +33,14 @@ order_by: manually
 #   hidden: false           # hidden for authors?
 
 # By default, the back-office displays the _label property (see label_field_name) of the content entry. This can be modified by writing your own Liquid template below:
-# entry_template: '<a href="{{ link }}">{{ entry._label }}</a>' # The default template
+entry_template: '<a href="{{ link }}">{{ entry._label }}</a><br>{{ entry.brief }}' # The default template
 
 # A list describing each field
 fields: 
 - name: # The lowercase, underscored name of the field
     label: Name # Human readable name of the field
     type: string
+    hint: The name of the micro-credential training module
     required: true
     localized: false
 
@@ -47,13 +48,14 @@ fields:
     label: Brief # Human readable name of the field
     type: text
     required: false
-    hint: Text beneath the header
+    hint: Brief description of the collection
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
 - cover_photo: # The lowercase, underscored name of the field
     label: Cover photo # Human readable name of the field
     type: file
+    hint: The cover photo of the collection's main page
     required: false
     localized: false
 

@@ -1,14 +1,14 @@
 # Human readable name of this type
-name: Messages
+name: Downloads
 
 # Lowercase, underscored handle used to access this type
-slug: messages
+slug: downloads
 
 # Explanatory text displayed in the back-office
-description: Messages submitted via the contact page form
+description: A record of the downloader's email, the name of the downloaded file, and the date it was downloaded
 
 # Slug of field used to identify entries by default, such as the title
-label_field_name: name
+label_field_name: email
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
 order_by: created_at
@@ -33,42 +33,29 @@ public_submission_enabled: true
 #   hidden: false           # hidden for authors?
 
 # By default, the back-office displays the _label property (see label_field_name) of the content entry. This can be modified by writing your own Liquid template below:
-entry_template: 'From: {{ entry._label }}<br>Email: <a href="mailto:{{ entry.email }}">{{ entry.email }}</a><br>Phone: {{ entry.phone }}<br>Has opted in? {{ entry.newsletter_opt_in }}<br>Message:<br>{{ entry.body }}' # The default template
+entry_template: 'Name: {{ entry.your_name }}<br>Email: <a href="mailto:{{ entry.email }}">{{ entry.email }}</a><br>File: {{ entry.downloaded_file }}' # The default template
 
 # A list describing each field
 fields: 
-- name: # The lowercase, underscored name of the field
-    label: Name # Human readable name of the field
+- your_name:
+    label: Downloader name
     type: string
     required: true
-    hint: Sender's name
-    localized: false
+    hint: Who downloaded the file
+    localized: false 
 
 - email: # The lowercase, underscored name of the field
     label: Email # Human readable name of the field
     type: email
     required: true
-    hint: Sender's email
+    hint: Downloader's email
     localized: false
 
-- phone: # The lowercase, underscored name of the field
-    label: Phone # Human readable name of the field
+- downloaded_file: # The lowercase, underscored name of the field
+    label: Downloaded file # Human readable name of the field
     type: string
-    required: false
-    hint: Sender's phone
-    localized: false
-
-- body: # The lowercase, underscored name of the field
-    label: Body # Human readable name of the field
-    type: text
     required: true
-    hint: The body of sender's message
+    hint: Name of the downloaded content
     localized: false
-    # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
-- newsletter_opt_in: # The lowercase, underscored name of the field
-    label: Newsletter opt in # Human readable name of the field
-    type: boolean
-    required: false
-    hint: Has the sender opted in for the mailing list?
-    localized: false
+

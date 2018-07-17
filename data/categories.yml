@@ -1,12 +1,14 @@
 - Kitchen Skills:
     _slug: kitchen-skills
     name: Kitchen Skills
-    brief: Emerging move the needle blended value silo. And innovation black lives
-      matter; justice disrupt; social entrepreneur social capital uplift vibrant.
+    brief: Prepare your service users for employment with kitchen skills training micro-credentials.
     cover_photo: "/samples/content_entries/knack-badges-2.JPG"
+    file: "/samples/content_entries/knack-badges-2.JPG"
+
 - Soft Skills:
     _slug: soft-skills
     name: Soft Skills
-    brief: Emerging move the needle blended value silo. And innovation black lives
-      matter; justice disrupt; social entrepreneur social capital uplift vibrant.
+    brief: Prepare your service users for employment with soft skills training micro-credentials.
     cover_photo: "/samples/content_entries/knack-badges.jpg"
+    file: "/samples/content_entries/knack-badges.jpg"
+
