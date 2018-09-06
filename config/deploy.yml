@@ -1,20 +1,5 @@
-local:
-  host: localhost:3000
-  handle: indigo-lake-627
-  email: joseph@josephmasongsong.com
-  api_key: 17c45322f96945320c3a8d08e446ab7adc0c2381
-# staging:
-#   host: staging.example.com
-#   email: john@doe.net
-#   password: apassword
-#   # api_key: <your api key here>
-# production:
-#   host: https://station.locomotive.works
-#   handle: celestial-resonance-6527
-#   email: joseph@potluckcatering.com
-#   api_key: c3e2c94ef9e7d9363aac05dc087cc016612232f0
 production:
-  host: https://knackworks.herokuapp.com
-  handle: natural-forest-6607
-  email: joseph@spencercreo.ca
-  api_key: 490c13a3b08180c0a8b551bd23f4b0a8a9d353d0
+  host: http://66.42.66.206:3000
+  handle: tropical-aurora-7866
+  email: pgyhh@sina.cn
+  api_key: 37db1b59808b2b286449a8659b8211ca83e80892
