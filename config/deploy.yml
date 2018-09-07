@@ -1,5 +1,5 @@
 production:
-  host: http://66.42.66.206:3000
-  handle: tropical-aurora-7866
+  host: http://202.182.105.99:8080
+  handle: mysterious-temple-3891
   email: pgyhh@sina.cn
-  api_key: 37db1b59808b2b286449a8659b8211ca83e80892
+  api_key: 87cd8bdc7c5eb694cb78d4414094927db9dbd241
