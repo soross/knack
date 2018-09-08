@@ -1,20 +1,27 @@
 - "Sample 1":
+    name: "gjhj"
+    email: pgyhhh@sina.cn
     phone: "Voluptatem asperiores officia occaecati repudiandae et neque."
     body: "Nesciunt et eius reprehenderit rerum laudantium sed. Amet velit omnis. Accusantium perferendis sint dolorem."
     newsletter_opt_in: true # Or false
 
 - "Sample 2":
+    name: "gjh88j"
+    email: pgyhh88h@sina.cn
     phone: "Eaque magnam voluptatem voluptatem ut sequi ea."
     body: "Aut et eius. Nesciunt nulla quidem voluptatum minima illum. Aliquid natus vitae numquam est."
     newsletter_opt_in: true # Or false
 
 - "Sample 3":
+    name: "gjh44j"
+    email: pgyhh44h@sina.cn
     phone: "Laudantium velit harum pariatur quas earum nihil quo."
     body: "Sed rerum officiis soluta. Dolorem quidem sed. Dolorum et ullam. Aut illum minus nam amet. Molestias non veniam."
     newsletter_opt_in: true # Or false
 
 - "Sample 4":
+    name: "gj33hj"
+    email: pgyh22hh@sina.cn
     phone: "Dignissimos provident ab minima."
     body: "Sunt quos voluptatem qui atque. Voluptas dolor maiores quia. At exercitationem voluptates sunt impedit est reprehenderit. Voluptatem fugit iure eos temporibus."
     newsletter_opt_in: true # Or false
-
